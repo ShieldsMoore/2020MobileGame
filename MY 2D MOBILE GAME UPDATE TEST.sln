@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{BFB829DE-B48E-A4F3-D57A-656F22D7B27F}") = "MY 2D MOBILE GAME UPDATE TEST", "Assembly-CSharp-firstpass.csproj", "{732D2DE9-D34F-DF85-A22D-BE5083C78D53}"
+EndProject
+Project("{BFB829DE-B48E-A4F3-D57A-656F22D7B27F}") = "MY 2D MOBILE GAME UPDATE TEST", "Assembly-CSharp.csproj", "{1B66D102-90E4-4D32-59E8-7BCBBCF61B08}"
+EndProject
+Project("{BFB829DE-B48E-A4F3-D57A-656F22D7B27F}") = "MY 2D MOBILE GAME UPDATE TEST", "Assembly-CSharp-Editor-firstpass.csproj", "{EEBF9B0A-D721-6C53-5D16-EF76B2AB6947}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{732D2DE9-D34F-DF85-A22D-BE5083C78D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{732D2DE9-D34F-DF85-A22D-BE5083C78D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{732D2DE9-D34F-DF85-A22D-BE5083C78D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{732D2DE9-D34F-DF85-A22D-BE5083C78D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B66D102-90E4-4D32-59E8-7BCBBCF61B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B66D102-90E4-4D32-59E8-7BCBBCF61B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B66D102-90E4-4D32-59E8-7BCBBCF61B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B66D102-90E4-4D32-59E8-7BCBBCF61B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEBF9B0A-D721-6C53-5D16-EF76B2AB6947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBF9B0A-D721-6C53-5D16-EF76B2AB6947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEBF9B0A-D721-6C53-5D16-EF76B2AB6947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEBF9B0A-D721-6C53-5D16-EF76B2AB6947}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
