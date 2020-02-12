@@ -29,7 +29,7 @@ public class MovingObject : MonoBehaviour {
 			currentTarget = startPoint.position;
 		}
 
-		if (Mathf.Approximately(objectToMove.transform.position .x, startPoint.position.x)) 
+		if (Mathf.Approximately(objectToMove.transform.position.x, startPoint.position.x)) 
 		{
 			currentTarget = endPoint.position;
 		}

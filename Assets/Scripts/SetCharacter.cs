@@ -20,6 +20,8 @@ public class SetCharacter : MonoBehaviour {
         {
             greenbird.interactable = true;
         }
+
+        
     }
 	
 	// Update is called once per frame

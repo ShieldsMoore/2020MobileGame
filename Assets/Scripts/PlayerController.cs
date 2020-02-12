@@ -66,6 +66,8 @@ public class PlayerController : MonoBehaviour {
     public LeftJoystick leftJoystick;
     public Vector3 leftJoystickInput;
     public bool moreGravity;
+    public bool turn;
+    public bool rhythm;
 
 
 	// Use this for initialization
@@ -88,7 +90,19 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (rhythm == true)
+        {
+            if (turn == true)
+            {
+                myRigidBody.velocity = new Vector2(0, moveSpeed);
+            }
 
+            if (turn == false)
+            {
+                myRigidBody.velocity = new Vector2(moveSpeed, 0);
+            }
+        }
+ 
         step = changespeed * Time.deltaTime;
 
         //myRigidBody.velocity = new Vector3(moveSpeed, myRigidBody.velocity.y, 0f);
@@ -309,6 +323,7 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    //WE WILL ADD THIS NEW
     void FixedUpdate()
     {
         if( moreGravity == true)
@@ -323,6 +338,17 @@ public class PlayerController : MonoBehaviour {
    
     }
 
+    public void turnbird()
+    {
+        if (turn == true)
+        {
+            turn = false;
+        }
+        else if (turn == false)
+        {
+            turn = true;
+        }
+    }
     public void Jump()
     {
         //if (isGrounded)

@@ -10,6 +10,9 @@ TagManager:
   - Enemy
   - FP
   - PlayerB
+  - Gap
+  - seeker
+  - safe
   layers:
   - Default
   - TransparentFX

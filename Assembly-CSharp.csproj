@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{ADAF3B9E-DCE7-F6E2-C322-F6899CB00191}</ProjectGuid>
+    <ProjectGuid>{EFD8546B-64E7-C301-65F4-E1424F8C8A59}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,13 +62,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Duck.cs" />
-    <Compile Include="Assets\fallingplatform.cs" />
+    <Compile Include="Assets\batfly.cs" />
+    <Compile Include="Assets\flying.cs" />
+    <Compile Include="Assets\flytrigger.cs" />
     <Compile Include="Assets\itsHarshdeep\LoadingBetweenScenes\Scripts\Constants.cs" />
     <Compile Include="Assets\itsHarshdeep\LoadingBetweenScenes\Scripts\LoadingSceneController.cs" />
     <Compile Include="Assets\itsHarshdeep\LoadingBetweenScenes\Scripts\LoadingSceneDemo.cs" />
     <Compile Include="Assets\itsHarshdeep\LoadingBetweenScenes\Scripts\LoadRequestedScene.cs" />
     <Compile Include="Assets\itsHarshdeep\LoadingBetweenScenes\Scripts\SceneController.cs" />
+    <Compile Include="Assets\joyride.cs" />
     <Compile Include="Assets\LeanTouch\Examples\Scripts\LeanDestroy.cs" />
     <Compile Include="Assets\LeanTouch\Examples\Scripts\LeanDragLine.cs" />
     <Compile Include="Assets\LeanTouch\Examples\Scripts\LeanDragTrail.cs" />
@@ -110,16 +112,22 @@
     <Compile Include="Assets\MobFarm\AutoPool\Scripts\AP_Pool.cs" />
     <Compile Include="Assets\MobFarm\AutoPool\Scripts\AP_Reference.cs" />
     <Compile Include="Assets\MobFarm\AutoPool\Scripts\MF_StaticAutoPool.cs" />
+    <Compile Include="Assets\randomattack.cs" />
+    <Compile Include="Assets\safezone.cs" />
+    <Compile Include="Assets\Scripts\ButtonTimer.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CameraController1.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\CheckpointController.cs" />
+    <Compile Include="Assets\Scripts\CSharpNotes.cs" />
     <Compile Include="Assets\Scripts\DelPlayerPrefs.cs" />
     <Compile Include="Assets\Scripts\DestroyOverTime.cs" />
     <Compile Include="Assets\Scripts\dragoncontroller.cs" />
+    <Compile Include="Assets\Scripts\Duck.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\ExtraLife.cs" />
     <Compile Include="Assets\Scripts\FadeIn.cs" />
+    <Compile Include="Assets\Scripts\fallingplatform.cs" />
     <Compile Include="Assets\Scripts\FlyingEnemy.cs" />
     <Compile Include="Assets\Scripts\frogcontroller.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />
@@ -134,15 +142,23 @@
     <Compile Include="Assets\Scripts\Loading.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MovingObject.cs" />
+    <Compile Include="Assets\Scripts\Notes.cs" />
+    <Compile Include="Assets\Scripts\Notes2.cs" />
     <Compile Include="Assets\Scripts\PauseScreen.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PSScreen.cs" />
+    <Compile Include="Assets\Scripts\RayEnemy.cs" />
     <Compile Include="Assets\Scripts\ResetOnRespawn.cs" />
     <Compile Include="Assets\Scripts\SetCharacter.cs" />
+    <Compile Include="Assets\Scripts\simpleController.cs" />
     <Compile Include="Assets\Scripts\SimpleLoading.cs" />
     <Compile Include="Assets\Scripts\SpawnPlayer.cs" />
     <Compile Include="Assets\Scripts\Star.cs" />
     <Compile Include="Assets\Scripts\StompEnemy.cs" />
+    <Compile Include="Assets\securitydetection.cs" />
+    <Compile Include="Assets\starchase.cs" />
+    <Compile Include="Assets\taptomove.cs" />
+    <Compile Include="Assets\TouchAndGo.cs" />
     <Compile Include="Assets\TouchJoysticks\Scripts\DualJoystickPlayerController.cs" />
     <Compile Include="Assets\TouchJoysticks\Scripts\DualJoystickTouchContoller.cs" />
     <Compile Include="Assets\TouchJoysticks\Scripts\LeftJoystick.cs" />
@@ -160,88 +176,88 @@
     <None Include="Assets\LeanTouch\Examples\Shaders\Smooth.shader" />
     <None Include="Assets\MobFarm\_Docs\AutoPool Docs\AutoPool Change Log.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -415,13 +431,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/Rob/Desktop/My Mobile Game 2020 Ready/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/Rob/Desktop/Git Project/2020MobileGame/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -786,7 +802,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{D674D70F-EF6E-4C72-93CA-765C49E2C0B8}</Project>
+      <Project>{132FF2FE-5B18-A8FB-F7ED-11858D1F404C}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

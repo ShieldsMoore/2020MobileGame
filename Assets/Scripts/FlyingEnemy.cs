@@ -29,12 +29,12 @@ public class FlyingEnemy : MonoBehaviour {
 
         if (player.transform.position.x > objectToMove.transform.position.x) 
         {
-            transform.localScale = new Vector2(1, -1);
+            transform.localScale = new Vector2(-1, -1);
         }
 
         else
         {
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector2(-1, 1);
         }
 	}
 }
