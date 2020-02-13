@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\batfly.cs" />
+    <Compile Include="Assets\evolution.cs" />
     <Compile Include="Assets\flying.cs" />
     <Compile Include="Assets\flytrigger.cs" />
     <Compile Include="Assets\itsHarshdeep\LoadingBetweenScenes\Scripts\Constants.cs" />
