@@ -63,9 +63,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\batfly.cs" />
+    <Compile Include="Assets\boostup.cs" />
     <Compile Include="Assets\evolution.cs" />
     <Compile Include="Assets\flying.cs" />
     <Compile Include="Assets\flytrigger.cs" />
+    <Compile Include="Assets\Gstcha\AddCoin.cs" />
+    <Compile Include="Assets\Gstcha\BearManager.cs" />
+    <Compile Include="Assets\Gstcha\Gatcha.cs" />
+    <Compile Include="Assets\Gstcha\PlaceBears.cs" />
     <Compile Include="Assets\itsHarshdeep\LoadingBetweenScenes\Scripts\Constants.cs" />
     <Compile Include="Assets\itsHarshdeep\LoadingBetweenScenes\Scripts\LoadingSceneController.cs" />
     <Compile Include="Assets\itsHarshdeep\LoadingBetweenScenes\Scripts\LoadingSceneDemo.cs" />

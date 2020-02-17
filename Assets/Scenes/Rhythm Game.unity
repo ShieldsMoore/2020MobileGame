@@ -6694,6 +6694,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  fe: {fileID: 0}
+  sd: {fileID: 0}
+  security: 0
 --- !u!61 &531742636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6881,6 +6884,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  fe: {fileID: 0}
+  sd: {fileID: 0}
+  security: 0
 --- !u!61 &698966941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8980,6 +8986,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1646445770947872}
+    - target: {fileID: 11417026, guid: eabcfb1df5bc64a1ab8598918823149f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 21246176, guid: eabcfb1df5bc64a1ab8598918823149f, type: 3}
       propertyPath: m_SortingLayerID
       value: 1905526379
@@ -9407,7 +9417,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1846762717}
-  - component: {fileID: 1846762716}
   - component: {fileID: 1846762715}
   m_Layer: 0
   m_Name: Touch To Turn
@@ -9443,20 +9452,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1846762716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846762714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bb775feca211c748b48cd3f9b59a4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Prefab: {fileID: 107560, guid: 91d470dbcb8d340ac91d54bd24b92c02, type: 3}
-  FingerDistance: 10
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1846762717
 Transform:
   m_ObjectHideFlags: 0
@@ -9591,6 +9597,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  fe: {fileID: 0}
+  sd: {fileID: 0}
+  security: 0
 --- !u!61 &1907894270
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11491,6 +11500,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  fe: {fileID: 0}
+  sd: {fileID: 0}
+  security: 0
 --- !u!212 &212437304403412035
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11838,6 +11850,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  fe: {fileID: 0}
+  sd: {fileID: 0}
+  security: 0
 --- !u!114 &8160695072977032078
 MonoBehaviour:
   m_ObjectHideFlags: 0

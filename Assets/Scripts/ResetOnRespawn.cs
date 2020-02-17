@@ -49,7 +49,7 @@ public class ResetOnRespawn : MonoBehaviour {
 		transform.position = startPosition;
 		transform.rotation = startRotation;
 		transform.localScale = startLocalScale;
-        sd.found = false;
+        //sd.found = false;
 
 		if (myRigidbody != null) 
 		{

@@ -68,6 +68,13 @@ public class PlayerController : MonoBehaviour {
     public bool moreGravity;
     public bool turn;
     public bool rhythm;
+    public bool runner;
+    public float boosttime;
+    public float maxboostime;
+    public Image boostbar;
+    public float boostSpeed;
+    public bool doodle;
+    public float jumpPower;
 
 
 	// Use this for initialization
@@ -90,6 +97,19 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+
+        if (doodle)
+        {
+            transform.Translate(Input.acceleration.x, 0, 0);
+
+            if (isGrounded)
+            {
+                myRigidBody.AddForce(transform.up * jumpPower);
+                
+            }
+      
+        }
+
         if (rhythm == true)
         {
             if (turn == true)
@@ -101,6 +121,35 @@ public class PlayerController : MonoBehaviour {
             {
                 myRigidBody.velocity = new Vector2(moveSpeed, 0);
             }
+        }
+
+        if(runner == true)
+        {
+            myRigidBody.velocity = new Vector2(moveSpeed, myRigidBody.velocity.y);
+            boostbar.fillAmount = (boosttime / maxboostime);
+
+
+            if (CnInputManager.GetButton ("Boost"))
+            {
+               
+                boosttime -= Time.deltaTime;
+          
+                if (boosttime > 0)
+                {
+                    moveSpeed = boostSpeed;
+                }
+                else
+                {
+                    moveSpeed = 5;
+                }
+            }
+
+         if(CnInputManager.GetButtonUp ("Boost"))
+            {
+                moveSpeed = 5;
+            }
+
+            
         }
  
         step = changespeed * Time.deltaTime;
