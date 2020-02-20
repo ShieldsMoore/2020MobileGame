@@ -30,18 +30,13 @@ public class securitydetection : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Player")
-        {
-            found = true;
-        }
-    }
+   
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
+            found = true;
             exclimation.enabled = true;
             //play a warning sound  
         }

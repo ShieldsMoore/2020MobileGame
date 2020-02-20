@@ -64,6 +64,7 @@ public class ResetOnRespawn : MonoBehaviour {
         if (fe != null)
         {
             fe.playertarget = false;
+            sd.found = false;
        }
 	}
 }

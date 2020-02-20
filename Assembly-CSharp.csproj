@@ -64,9 +64,12 @@
   <ItemGroup>
     <Compile Include="Assets\batfly.cs" />
     <Compile Include="Assets\boostup.cs" />
+    <Compile Include="Assets\cannonball.cs" />
+    <Compile Include="Assets\evo.cs" />
     <Compile Include="Assets\evolution.cs" />
     <Compile Include="Assets\flying.cs" />
     <Compile Include="Assets\flytrigger.cs" />
+    <Compile Include="Assets\gothit.cs" />
     <Compile Include="Assets\Gstcha\AddCoin.cs" />
     <Compile Include="Assets\Gstcha\BearManager.cs" />
     <Compile Include="Assets\Gstcha\Gatcha.cs" />

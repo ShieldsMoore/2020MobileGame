@@ -21,7 +21,7 @@ public class LevelManager : MonoBehaviour {
 	//public float PlayerY;
 	//public float PlayerZ;
 
-	public GameObject DieBurst;
+	//public GameObject DieBurst;
 
 	//public Text coinText;
 
@@ -137,7 +137,7 @@ public class LevelManager : MonoBehaviour {
        // thePlayer2.enabled = false;
        // sr2.enabled = false;
        // rb2D2.simulated = false;
-        Instantiate (DieBurst, thePlayer.transform.position, thePlayer.transform.rotation);
+        //Instantiate (DieBurst, thePlayer.transform.position, thePlayer.transform.rotation);
         
 
        // Instantiate(DieBurst, thePlayer2.transform.position, thePlayer2.transform.rotation);

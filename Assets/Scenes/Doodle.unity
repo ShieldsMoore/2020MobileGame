@@ -2991,7 +2991,6 @@ MonoBehaviour:
   thePlayer: {fileID: 0}
   sr: {fileID: 0}
   rb2D: {fileID: 0}
-  DieBurst: {fileID: 167010, guid: 64eab49863d3747709ff7926d16e0c38, type: 3}
   heart1: {fileID: 332742374}
   heart2: {fileID: 332667888}
   heart3: {fileID: 332701486}
@@ -7655,7 +7654,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646445770947872}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 652036f6a679ec34a9cb2c2862f4d7e9, type: 3}
   m_Name: 
@@ -9856,7 +9855,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646445770947872}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da477952ce316aa4baa032b7c652e896, type: 3}
   m_Name: 
@@ -10459,7 +10458,7 @@ MonoBehaviour:
   groundGrace: 0.25
   groundTime: 0
   jsound: 0
-  joystick: 1
+  joystick: 0
   leftJoystick: {fileID: 1997734687}
   leftJoystickInput: {x: 0, y: 0, z: 0}
   moreGravity: 0
@@ -10471,7 +10470,7 @@ MonoBehaviour:
   boostbar: {fileID: 0}
   boostSpeed: 0
   doodle: 1
-  jumpPower: 150
+  jumpPower: 125
 --- !u!114 &114092992432520590
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2991,7 +2991,6 @@ MonoBehaviour:
   thePlayer: {fileID: 0}
   sr: {fileID: 0}
   rb2D: {fileID: 0}
-  DieBurst: {fileID: 167010, guid: 64eab49863d3747709ff7926d16e0c38, type: 3}
   heart1: {fileID: 332742374}
   heart2: {fileID: 332667888}
   heart3: {fileID: 332701486}
@@ -5859,6 +5858,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  fe: {fileID: 0}
+  sd: {fileID: 0}
+  security: 0
 --- !u!61 &531742636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6046,6 +6048,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  fe: {fileID: 0}
+  sd: {fileID: 0}
+  security: 0
 --- !u!61 &698966941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6831,7 +6836,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079105850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.86, y: -1.4650352, z: 0.97626305}
+  m_LocalPosition: {x: -11.6, y: 1.58, z: 0.97626305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7684,20 +7689,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.66, y: 0.37035394}
   m_EdgeRadius: 0
---- !u!114 &1409884523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646445770947872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 652036f6a679ec34a9cb2c2862f4d7e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myanim: {fileID: 0}
-  pc: {fileID: 0}
 --- !u!1 &1488965380
 GameObject:
   m_ObjectHideFlags: 0
@@ -8774,6 +8765,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  fe: {fileID: 0}
+  sd: {fileID: 0}
+  security: 0
 --- !u!61 &1907894270
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9100,6 +9094,13 @@ MonoBehaviour:
   moreGravity: 0
   turn: 0
   rhythm: 0
+  runner: 0
+  boosttime: 0
+  maxboostime: 0
+  boostbar: {fileID: 0}
+  boostSpeed: 0
+  doodle: 0
+  jumpPower: 0
 --- !u!50 &1979652538
 Rigidbody2D:
   serializedVersion: 4
@@ -9382,7 +9383,7 @@ MonoBehaviour:
   onFingerHeldDown:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1409884523}
+      - m_Target: {fileID: 0}
         m_MethodName: Small
         m_Mode: 1
         m_Arguments:
@@ -9399,7 +9400,7 @@ MonoBehaviour:
   onFingerHeldUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1409884523}
+      - m_Target: {fileID: 0}
         m_MethodName: Big
         m_Mode: 1
         m_Arguments:
@@ -9778,7 +9779,6 @@ GameObject:
   - component: {fileID: 114078627505576120}
   - component: {fileID: 95409078013515838}
   - component: {fileID: 58173975189705832}
-  - component: {fileID: 1409884523}
   - component: {fileID: 1646445770947873}
   m_Layer: 8
   m_Name: Player
@@ -10403,6 +10403,13 @@ MonoBehaviour:
   moreGravity: 0
   turn: 0
   rhythm: 0
+  runner: 0
+  boosttime: 0
+  maxboostime: 0
+  boostbar: {fileID: 0}
+  boostSpeed: 0
+  doodle: 0
+  jumpPower: 0
 --- !u!114 &114092992432520590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10729,6 +10736,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  fe: {fileID: 0}
+  sd: {fileID: 0}
+  security: 0
 --- !u!212 &212437304403412035
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11076,6 +11086,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  fe: {fileID: 0}
+  sd: {fileID: 0}
+  security: 0
 --- !u!114 &8160695072977032078
 MonoBehaviour:
   m_ObjectHideFlags: 0

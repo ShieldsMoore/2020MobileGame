@@ -92,7 +92,7 @@ public class evolution : MonoBehaviour
         }
 
         // COMBO EVO x 2
-        // THESE DO NOT HAVE A MAX SO JUST 1 of each color would cause the evolution
+        // BELOW IFs DO NOT HAVE A MAX SO JUST 1 of each color would cause the evolution
 
         if((red/total) >= .5f && (blue/total) >= .5f)
         {
@@ -115,11 +115,6 @@ public class evolution : MonoBehaviour
         {
             anim.SetBool("evo7", true);
         }
-
-
-
-
-
 
     }
 
