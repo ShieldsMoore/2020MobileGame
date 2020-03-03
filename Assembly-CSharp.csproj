@@ -66,6 +66,7 @@
     <Compile Include="Assets\boostup.cs" />
     <Compile Include="Assets\cannonball.cs" />
     <Compile Include="Assets\cannonballoff.cs" />
+    <Compile Include="Assets\CollectCrouton.cs" />
     <Compile Include="Assets\evo.cs" />
     <Compile Include="Assets\evolution.cs" />
     <Compile Include="Assets\flying.cs" />
@@ -182,6 +183,7 @@
     <Compile Include="Assets\TouchJoysticks\Scripts\SingleJoystick.cs" />
     <Compile Include="Assets\TouchJoysticks\Scripts\SingleJoystickPlayerController.cs" />
     <Compile Include="Assets\TouchJoysticks\Scripts\SingleJoystickTouchController.cs" />
+    <Compile Include="Assets\WeightedCruoton.cs" />
     <None Include="Assets\LeanTouch\Examples\Fonts\OFL.txt" />
     <None Include="Assets\MobFarm\AutoPool\Demo Scene\You may delete this folder.txt" />
     <None Include="Assets\LeanTouch\Examples\Shaders\BackgroundSkybox.shader" />

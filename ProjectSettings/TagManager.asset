@@ -15,6 +15,7 @@ TagManager:
   - safe
   - absorb
   - ball
+  - Crouton
   layers:
   - Default
   - TransparentFX
