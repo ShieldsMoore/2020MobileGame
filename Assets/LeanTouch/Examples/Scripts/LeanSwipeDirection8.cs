@@ -36,6 +36,7 @@ namespace Lean.Touch
 				if (SwipedInThisDirection(swipe, left) == true)
 				{
 					InfoText.text = "You swiped left!";
+
 				}
 			
 				if (SwipedInThisDirection(swipe, right) == true)

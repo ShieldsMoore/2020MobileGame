@@ -65,6 +65,7 @@
     <Compile Include="Assets\batfly.cs" />
     <Compile Include="Assets\boostup.cs" />
     <Compile Include="Assets\cannonball.cs" />
+    <Compile Include="Assets\cannonballoff.cs" />
     <Compile Include="Assets\evo.cs" />
     <Compile Include="Assets\evolution.cs" />
     <Compile Include="Assets\flying.cs" />
@@ -121,6 +122,7 @@
     <Compile Include="Assets\MobFarm\AutoPool\Scripts\AP_Pool.cs" />
     <Compile Include="Assets\MobFarm\AutoPool\Scripts\AP_Reference.cs" />
     <Compile Include="Assets\MobFarm\AutoPool\Scripts\MF_StaticAutoPool.cs" />
+    <Compile Include="Assets\PowerUpMenu.cs" />
     <Compile Include="Assets\randomattack.cs" />
     <Compile Include="Assets\safezone.cs" />
     <Compile Include="Assets\Scripts\ButtonTimer.cs" />
@@ -129,6 +131,7 @@
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\CheckpointController.cs" />
     <Compile Include="Assets\Scripts\CSharpNotes.cs" />
+    <Compile Include="Assets\Scripts\DateandTime.cs" />
     <Compile Include="Assets\Scripts\DelPlayerPrefs.cs" />
     <Compile Include="Assets\Scripts\DestroyOverTime.cs" />
     <Compile Include="Assets\Scripts\dragoncontroller.cs" />

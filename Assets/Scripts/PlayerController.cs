@@ -68,13 +68,21 @@ public class PlayerController : MonoBehaviour {
     public bool moreGravity;
     public bool turn;
     public bool rhythm;
+
+
+    public float maxboostime;
     public bool runner;
     public float boosttime;
-    public float maxboostime;
     public Image boostbar;
     public float boostSpeed;
+    public float standardSpeed;
+    public bool nowboosting;
+    public float xMaxDisplacement;
+
+
     public bool doodle;
     public float jumpPower;
+    public GameObject killplane;
 
 
 	// Use this for initialization
@@ -102,12 +110,34 @@ public class PlayerController : MonoBehaviour {
         {
             transform.Translate(Input.acceleration.x, 0, 0);
 
-            if (isGrounded)
+            if (isGrounded && myRigidBody.velocity.y <=0)
             {
-                myRigidBody.AddForce(transform.up * jumpPower);
+                //myRigidBody.AddForce(transform.up * jumpPower);
+                myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpPower);
                 
             }
-      
+
+          
+
+            //If the player goes too far to the right, it is teleported to the left
+            if (transform.position.x > xMaxDisplacement)
+            {
+                transform.position = new Vector3(-xMaxDisplacement, transform.position.y, transform.position.z);
+            }
+            //If the player goes too far to the left, it is teleported to the right
+            if (transform.position.x < -xMaxDisplacement)
+            {
+                transform.position = new Vector3(xMaxDisplacement, transform.position.y, transform.position.z); 
+            }
+
+            if (myRigidBody.velocity.y > 0) 
+            {
+                Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
+                pos.x = Mathf.Clamp01(pos.x);
+                pos.y = Mathf.Clamp01(pos.y) -1f;
+                killplane.transform.position = Camera.main.ViewportToWorldPoint(pos);
+            }
+
         }
 
         if (rhythm == true)
@@ -128,20 +158,36 @@ public class PlayerController : MonoBehaviour {
             myRigidBody.velocity = new Vector2(moveSpeed, myRigidBody.velocity.y);
             boostbar.fillAmount = (boosttime / maxboostime);
 
-
-            if (CnInputManager.GetButton ("Boost"))
+            if (myRigidBody.velocity.y < 0)
             {
+                myRigidBody.gravityScale = 8;
+            }
+
+            else
+            {
+                myRigidBody.gravityScale = 3;
+            }
+
+                if (CnInputManager.GetButtonDown("Boost") && nowboosting == false)
+            {
+                if(boosttime > 0)
+                {
+                    boosttime -= 1;
+                    nowboosting = true;
+                    StartCoroutine(boostup());
+                }
                
-                boosttime -= Time.deltaTime;
-          
-                if (boosttime > 0)
-                {
-                    moveSpeed = boostSpeed;
-                }
-                else
-                {
-                    moveSpeed = 5;
-                }
+
+               // boosttime -= Time.deltaTime;
+               //
+               // if (boosttime > 0)
+               // {
+               //     moveSpeed = boostSpeed;
+               // }
+               // else
+               // {
+               //     moveSpeed = 5;
+               // }
             }
 
          if(CnInputManager.GetButtonUp ("Boost"))
@@ -155,7 +201,10 @@ public class PlayerController : MonoBehaviour {
         step = changespeed * Time.deltaTime;
 
         //myRigidBody.velocity = new Vector3(moveSpeed, myRigidBody.velocity.y, 0f);
+        
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+
+        
         //player.transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime);
         jumpTime -= Time.deltaTime;
         groundTime -= Time.deltaTime;
@@ -397,6 +446,16 @@ public class PlayerController : MonoBehaviour {
         {
             turn = true;
         }
+    }
+
+    IEnumerator boostup()
+    {
+       
+        moveSpeed = boostSpeed;
+        yield return new WaitForSeconds(5f);
+        moveSpeed = standardSpeed;
+        nowboosting = false;
+
     }
     public void Jump()
     {

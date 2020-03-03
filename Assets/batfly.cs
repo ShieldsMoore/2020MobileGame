@@ -17,4 +17,13 @@ public class batfly : MonoBehaviour
     {
         rb2D.velocity = new Vector2(-moveSpeed, 0);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
+            //collect the gold and add to gold score
+            MF_AutoPool.Despawn(this.gameObject); // this would despawn the gold
+        }
+    }
 }

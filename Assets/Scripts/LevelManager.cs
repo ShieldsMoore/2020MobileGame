@@ -147,6 +147,7 @@ public class LevelManager : MonoBehaviour {
 		healthCount = maxHealth;
 		respawning = false;
 		UpdateHeartMeter ();
+        thePlayer.moveSpeed = thePlayer.standardSpeed;
 		//coinCount = 0;
 		//coinText.text = "Stars:" + coinCount;
 		thePlayer.transform.position = thePlayer.respawnPosition;

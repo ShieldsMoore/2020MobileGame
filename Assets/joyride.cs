@@ -12,6 +12,7 @@ public class joyride : MonoBehaviour
     public GameObject cannonball;
     // Start is called before the first frame update
     void Start()
+        
     {
 
     }
@@ -31,7 +32,9 @@ public class joyride : MonoBehaviour
 
         if (CnInputManager.GetButtonDown("Shoot"))
         {
+
             MF_AutoPool.Spawn(cannonball, transform.position, transform.rotation);
+            cannonball.GetComponent<cannonball>().powerup = 10;
         }
     }
 
