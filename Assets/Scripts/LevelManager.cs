@@ -157,6 +157,7 @@ public class LevelManager : MonoBehaviour {
         sr.enabled = true;
         rb2D.simulated = true;
         thePlayer.knockBackCounter = 0;
+        thePlayer.moveSpeed = 5;
       
       //  thePlayer2.enabled = true;
       //  sr2.enabled = true;
