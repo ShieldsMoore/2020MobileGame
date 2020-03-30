@@ -3079,6 +3079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: MainMenu
+  leveltoload: 
 --- !u!114 &332701486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3434,7 +3435,7 @@ MonoBehaviour:
   target: {fileID: 1646445770947872}
   followAhead: 5
   smoothing: 3
-  followTarget: 0
+  followTarget: 1
   P1: {fileID: 1646445770947872}
   P2: {fileID: 1979652532}
   PC1: {fileID: 114078627505576120}
@@ -7086,6 +7087,9 @@ MonoBehaviour:
   waitToMove: 1
   waitToLoad: 3
   pauseScreen: {fileID: 326648478}
+  tutorial: 0
+  score: 0
+  levelOver: 0
 --- !u!1 &825216848
 GameObject:
   m_ObjectHideFlags: 0
@@ -10472,8 +10476,10 @@ MonoBehaviour:
   boostSpeed: 0
   standardSpeed: 0
   nowboosting: 0
+  xMaxDisplacement: 0
   doodle: 0
   jumpPower: 0
+  killplane: {fileID: 0}
 --- !u!50 &1979652538
 Rigidbody2D:
   serializedVersion: 4
@@ -12030,8 +12036,10 @@ MonoBehaviour:
   boostSpeed: 10
   standardSpeed: 5
   nowboosting: 0
+  xMaxDisplacement: 0
   doodle: 0
   jumpPower: 0
+  killplane: {fileID: 0}
 --- !u!114 &114092992432520590
 MonoBehaviour:
   m_ObjectHideFlags: 0
