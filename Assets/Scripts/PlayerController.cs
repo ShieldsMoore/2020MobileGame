@@ -83,6 +83,7 @@ public class PlayerController : MonoBehaviour {
     public bool doodle;
     public float jumpPower;
     public GameObject killplane;
+    public PlatformManager pm;
 
 
 	// Use this for initialization
@@ -192,7 +193,8 @@ public class PlayerController : MonoBehaviour {
 
          if(CnInputManager.GetButtonUp ("Boost"))
             {
-                moveSpeed = 5;
+            
+               // moveSpeed = 5;
             }
 
             
@@ -450,10 +452,12 @@ public class PlayerController : MonoBehaviour {
 
     IEnumerator boostup()
     {
-       
-        moveSpeed = boostSpeed;
+        pm.boosting = true;
+        //backgroundanimator.SetBool("SpeedUp", true);
+      
         yield return new WaitForSeconds(5f);
-        moveSpeed = standardSpeed;
+        pm.boosting = false;
+        //backgroundanimator.SetBool("SpeedUp", false);
         nowboosting = false;
 
     }

@@ -16,6 +16,7 @@ TagManager:
   - absorb
   - ball
   - Crouton
+  - MP
   layers:
   - Default
   - TransparentFX

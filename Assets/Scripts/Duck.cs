@@ -20,7 +20,7 @@ public class Duck : MonoBehaviour {
     public void Small()
     {
         transform.localScale = new Vector3(.5f, .5f, .5f);
-        pc.shrunk = true;
+        //pc.shrunk = true;
         pc.moveSpeed = 10f;
         //myanim.SetBool("Duck", true);
     }

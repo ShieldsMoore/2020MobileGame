@@ -49,6 +49,7 @@ public class LevelManager : MonoBehaviour {
 	//public AudioSource coinSound;
 	public AudioSource levelMusic;
 	public AudioSource gameOverMusic;
+    public bool runner;
     //
 	//public GameObject pauseScreen;
 
@@ -157,7 +158,16 @@ public class LevelManager : MonoBehaviour {
         sr.enabled = true;
         rb2D.simulated = true;
         thePlayer.knockBackCounter = 0;
-        thePlayer.moveSpeed = 5;
+        if (runner == true)
+        {
+            thePlayer.moveSpeed = 0;
+        }
+
+        else
+        {
+            thePlayer.moveSpeed = 5;
+        }
+      
       
       //  thePlayer2.enabled = true;
       //  sr2.enabled = true;

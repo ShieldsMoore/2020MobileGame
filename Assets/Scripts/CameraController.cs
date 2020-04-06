@@ -16,6 +16,7 @@ public class CameraController : MonoBehaviour {
     public PlayerController PC1;
     public PlayerController PC2;
     public bool switched;
+    public bool doodle;
 
     // Use this for initialization
     void Start () {
@@ -35,10 +36,10 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (followTarget) 
+		if (followTarget == true && doodle == false) 
 		{
 			
-			targetPosition = new Vector3 (target.transform.position.x, target.transform.position.y, transform.position.z);
+			targetPosition = new Vector3 ((target.transform.position.x + followAhead), target.transform.position.y, transform.position.z);
 
 			if (target.transform.localScale.x > 0f) {
 				targetPosition = new Vector3 (targetPosition.x, targetPosition.y, targetPosition.z);
@@ -50,6 +51,24 @@ public class CameraController : MonoBehaviour {
 
 			transform.position = Vector3.Lerp (transform.position, targetPosition, smoothing * Time.deltaTime);
 		}
+
+        else if (followTarget == true && doodle == true)
+        {
+            targetPosition = new Vector3(transform.position.x, target.transform.position.y, transform.position.z);
+
+            if (target.transform.localScale.x > 0f)
+            {
+                targetPosition = new Vector3(targetPosition.x, targetPosition.y, targetPosition.z);
+            }
+            else
+            {
+                targetPosition = new Vector3(targetPosition.x, targetPosition.y, targetPosition.z);
+            }
+
+            //transform.position = targetPosition;
+
+            transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing * Time.deltaTime);
+        }
 
         if (switched == false)
         {

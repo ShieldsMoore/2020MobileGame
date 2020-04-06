@@ -119,6 +119,7 @@
     <Compile Include="Assets\LeanTouch\Scripts\LeanGesture.cs" />
     <Compile Include="Assets\LeanTouch\Scripts\LeanSnapshot.cs" />
     <Compile Include="Assets\LeanTouch\Scripts\LeanTouch.cs" />
+    <Compile Include="Assets\LevelGenerator.cs" />
     <Compile Include="Assets\MenuManager.cs" />
     <Compile Include="Assets\MobFarm\AutoPool\Demo Scene\Demo Scripts\AP_DemoDeathTimer.cs" />
     <Compile Include="Assets\MobFarm\AutoPool\Demo Scene\Demo Scripts\AP_DemoSpawn.cs" />
@@ -127,6 +128,8 @@
     <Compile Include="Assets\MobFarm\AutoPool\Scripts\AP_Pool.cs" />
     <Compile Include="Assets\MobFarm\AutoPool\Scripts\AP_Reference.cs" />
     <Compile Include="Assets\MobFarm\AutoPool\Scripts\MF_StaticAutoPool.cs" />
+    <Compile Include="Assets\PlatformManager.cs" />
+    <Compile Include="Assets\platformmover.cs" />
     <Compile Include="Assets\PowerUpMenu.cs" />
     <Compile Include="Assets\ProgressManager.cs" />
     <Compile Include="Assets\randomattack.cs" />
@@ -134,6 +137,7 @@
     <Compile Include="Assets\Scripts\ButtonTimer.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CameraController1.cs" />
+    <Compile Include="Assets\Scripts\CameraController2.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\CheckpointController.cs" />
     <Compile Include="Assets\Scripts\CSharpNotes.cs" />
@@ -190,6 +194,8 @@
     <Compile Include="Assets\TouchJoysticks\Scripts\SingleJoystickPlayerController.cs" />
     <Compile Include="Assets\TouchJoysticks\Scripts\SingleJoystickTouchController.cs" />
     <Compile Include="Assets\TriggerTut.cs" />
+    <Compile Include="Assets\TurnoffHand.cs" />
+    <Compile Include="Assets\verticalspawner.cs" />
     <Compile Include="Assets\WeightedCruoton.cs" />
     <None Include="Assets\LeanTouch\Examples\Fonts\OFL.txt" />
     <None Include="Assets\MobFarm\AutoPool\Demo Scene\You may delete this folder.txt" />
