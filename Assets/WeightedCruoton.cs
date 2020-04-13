@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WeightedCruoton : MonoBehaviour
 {
+    public securitydetection sd;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class WeightedCruoton : MonoBehaviour
             else if (collision.gameObject.GetComponent<Rigidbody2D>().mass <= 2)
             {
                 Debug.Log("we are in trouble");
+                sd.found = true;
             }
         }
     }

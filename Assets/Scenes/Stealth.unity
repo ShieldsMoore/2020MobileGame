@@ -3005,6 +3005,7 @@ MonoBehaviour:
   invincible: 0
   levelMusic: {fileID: 319267438}
   gameOverMusic: {fileID: 319044294}
+  runner: 0
 --- !u!114 &332688768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3078,6 +3079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: MainMenu
+  leveltoload: 
 --- !u!114 &332701486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3439,6 +3441,7 @@ MonoBehaviour:
   PC1: {fileID: 114078627505576120}
   PC2: {fileID: 1979652537}
   switched: 0
+  doodle: 0
 --- !u!114 &332742374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6677,6 +6680,9 @@ MonoBehaviour:
   waitToMove: 1
   waitToLoad: 3
   pauseScreen: {fileID: 326648478}
+  tutorial: 0
+  score: 0
+  levelOver: 0
 --- !u!1 &825216848
 GameObject:
   m_ObjectHideFlags: 0
@@ -9947,6 +9953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cf25f6bb338c547ac58acd1081fc78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sd: {fileID: 0}
 --- !u!61 &1592880690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11446,6 +11453,7 @@ MonoBehaviour:
   doodle: 0
   jumpPower: 0
   killplane: {fileID: 0}
+  pm: {fileID: 0}
 --- !u!50 &1979652538
 Rigidbody2D:
   serializedVersion: 4
@@ -12760,6 +12768,7 @@ MonoBehaviour:
   doodle: 0
   jumpPower: 0
   killplane: {fileID: 0}
+  pm: {fileID: 0}
 --- !u!114 &114092992432520590
 MonoBehaviour:
   m_ObjectHideFlags: 0

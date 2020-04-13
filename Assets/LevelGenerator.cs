@@ -24,8 +24,8 @@ public class LevelGenerator : MonoBehaviour
         {
             spawnPosition.y += Random.Range(minY, maxY);
             spawnPosition.x = Random.Range(-levelWidth, levelWidth);
-            MF_AutoPool.Spawn(platformPrefab, spawnPosition, Quaternion.identity);
-            //Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
+            //MF_AutoPool.Spawn(platformPrefab, spawnPosition, Quaternion.identity);
+            Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
         }
 
        
